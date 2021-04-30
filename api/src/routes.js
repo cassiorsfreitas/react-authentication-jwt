@@ -21,7 +21,7 @@ router.post('/authenticate', (req, res) => {
 /**
  * Private route
  */
-router.use(authMiddleware);
+// router.use(authMiddleware);
 
 router.get('/users', async (req, res) => {
   return res.json([
